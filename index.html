@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Mail Searcher Zone — email format and domain information checker.">
+  <title>Mail Searcher Zone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#"><span class="brand-icon">M</span><span>Mail Searcher <b>Zone</b></span></a>
+    <nav><a href="#tools">Tools</a><a href="#about">About</a><a href="#privacy">Privacy</a></nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="eyebrow"><span class="dot"></span> EMAIL INTELLIGENCE TOOLKIT</div>
+      <h1>Know more about<br><span>an email address.</span></h1>
+      <p class="intro">Check an email's format and explore basic domain details in one simple place.</p>
+      <form id="search-form" class="search-box">
+        <label class="sr-only" for="email-input">Email address</label>
+        <input id="email-input" type="email" placeholder="Enter an email address…" autocomplete="off" required>
+        <button type="submit">Check Email <span aria-hidden="true">→</span></button>
+      </form>
+      <p class="microcopy">Demo version · No email is sent · Results are not a guarantee that an inbox exists</p>
+      <div id="message" class="message" role="status" aria-live="polite"></div>
+    </section>
+
+    <section id="results" class="results hidden" aria-live="polite">
+      <div class="results-heading"><div><p class="eyebrow">CHECK RESULTS</p><h2>Email overview</h2></div><span class="status-pill" id="format-status">Checked</span></div>
+      <div class="result-grid">
+        <article class="result-card"><span class="card-icon">✓</span><p class="card-label">Email format</p><h3 id="result-format">—</h3><p class="card-note">Checks the address structure only.</p></article>
+        <article class="result-card"><span class="card-icon">@</span><p class="card-label">Domain</p><h3 id="result-domain">—</h3><p class="card-note">The part after the @ symbol.</p></article>
+        <article class="result-card"><span class="card-icon">↗</span><p class="card-label">Public search</p><h3>Not connected</h3><p class="card-note">A permitted search provider must be integrated.</p></article>
+        <article class="result-card"><span class="card-icon">⌁</span><p class="card-label">Breach check</p><h3>Not connected</h3><p class="card-note">Requires an approved data source/API.</p></article>
+      </div>
+      <div class="notice"><b>Important:</b> A valid-looking email format does not prove that the mailbox exists. This demo does not identify a person or search private information.</div>
+    </section>
+
+    <section id="tools" class="tools-section">
+      <div class="section-heading"><p class="eyebrow">BUILT FOR CLARITY</p><h2>Simple tools. Clear results.</h2><p>Start with safe, basic checks. More features can be added later through approved services.</p></div>
+      <div class="feature-grid">
+        <article class="feature"><div class="feature-icon">✉</div><h3>Email format checker</h3><p>Check whether an address follows a basic email format.</p></article>
+        <article class="feature"><div class="feature-icon">◎</div><h3>Domain overview</h3><p>Separate the domain from the email address for further checks.</p></article>
+        <article class="feature"><div class="feature-icon">⌕</div><h3>Public information</h3><p>Can be added using sources that permit this type of lookup.</p></article>
+      </div>
+    </section>
+
+    <section id="about" class="bottom-panel"><div><p class="eyebrow">ABOUT THE PROJECT</p><h2>Built one step at a time.</h2><p>Mail Searcher Zone is an independent starter project. Results should be accurate, transparent and respectful of people's privacy.</p></div><div class="panel-badge">MSZ<span>MAIL SEARCHER ZONE</span></div></section>
+    <section id="privacy" class="privacy"><h2>Privacy note</h2><p>This starter page processes the email entered in your browser and does not send it to a server. Before adding APIs, accounts or search history, publish a clear privacy policy and explain what information is collected and why.</p></section>
+  </main>
+
+  <footer><a class="brand footer-brand" href="#"><span class="brand-icon">M</span><span>Mail Searcher <b>Zone</b></span></a><span>Independent project · Starter demo</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
